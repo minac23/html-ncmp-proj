@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minac23/port-proj-files.git"
+  },
+  "author": "Celine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minac23/port-proj-files/issues"
+  },
+  "homepage": "https://github.com/minac23/port-proj-files#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
