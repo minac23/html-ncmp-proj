@@ -50,6 +50,7 @@ this will create a package.json file
 npm install lite-server --save-dev
 no version given on lite server, this will install the latest version
 --save-dev means installed as a project dependency, when project is built for deployment, it will not be included in the final build files
+this will create a package-lock.json
 
 # add scripts to package.json file (example page below, make sure to include scripts with a "," after except for last script)
 {
@@ -89,3 +90,36 @@ node_modules
 git add .
 git commit
 git push
+
+# install dependencies
+install lite server if have not done so already
+ 
+install jquery
+npm install jquery@3.5.1 popper.js@1.16.1
+install bootstrap
+npm install bootstrap@4.5.2
+this will auto update the package.json file
+
+# update bootstrap code
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <title></title>
+</head>
+
+# add javascript files
+after </footer> but before closing </body> tag
+
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
